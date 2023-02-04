@@ -1,9 +1,0 @@
-# Dup2.go 
-real    0m0,118s
-user    0m0,148s
-sys     0m0,056s
-
-# bash ($ time sort pg1513.txt | uniq -c)
-real    0m0,019s
-user    0m0,016s
-sys     0m0,000s
