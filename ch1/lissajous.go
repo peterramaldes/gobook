@@ -8,8 +8,6 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
-	"time"
 )
 
 var palette = []color.Color{color.White, color.Black}
@@ -19,10 +17,10 @@ const (
 	blackIndex = 1 // second palette color
 )
 
-func main() {
-	rand.Seed(time.Now().UTC().UnixNano()) // TODO: what happen here?
-	lissajous(os.Stdout)
-}
+// func main() {
+// 	rand.Seed(time.Now().UTC().UnixNano()) // TODO: what happen here?
+// 	lissajous(os.Stdout)
+// }
 
 func lissajous(out io.Writer) {
 	const (
