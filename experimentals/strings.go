@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sort"
+	"strings"
 )
 
 func main() {
@@ -27,4 +28,6 @@ func main() {
 	Usage:
 		go command [args]
 	...`)
+
+	fmt.Println(strings.Join(vet, ", "))
 }
