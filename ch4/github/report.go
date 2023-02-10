@@ -25,7 +25,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := report.Execute(os.Stdout, result); err != nil {
+	if err := issueList.Execute(os.Stdout, result); err != nil {
 		log.Fatal(err)
 	}
 }
