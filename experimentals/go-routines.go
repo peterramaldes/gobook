@@ -3,13 +3,19 @@ package main
 import "fmt"
 
 func main() {
+	m := make(chan int)
 	for i := 0; i < 100; i++ {
 		go func(i int) {
 			fmt.Println("foo ", i)
+			m <- i
 		}(i)
 		go func(i int) {
 			fmt.Println("bar ", i)
 		}(i)
+	}
+
+	for {
+		fmt.Println(<-m)
 	}
 }
 
